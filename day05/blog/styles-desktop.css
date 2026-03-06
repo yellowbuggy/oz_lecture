@@ -1,0 +1,85 @@
+/* 데스크탑 */
+body {
+  max-width: 80vw;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+header {
+  padding: 2rem;
+  border-bottom: 0.2rem solid black;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+#posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.post {
+  padding: 1.5rem;
+  border: 0.2rem solid black;
+}
+.post:hover {
+  border-color: #3c5da9;
+  cursor: pointer;
+}
+aside {
+  width: 25vw;
+  padding: 1.5rem;
+  margin-right: 2vw;
+  font-size: 1em;
+}
+footer {
+  padding: 1.5rem;
+  border-top: 0.2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin: 2vw;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1023px) {
+  body {
+    max-width: 90vw;
+  }
+  #posts {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  nav ul {
+    justify-content: center;
+    gap: 2rem;
+  }
+  aside {
+    width: 30vw;
+    margin-right: 1vw;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+  }
+  #posts {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  aside {
+    width: 100%;
+    margin: 1rem;
+  }
+}

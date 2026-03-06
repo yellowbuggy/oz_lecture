@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User Registration Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>User Registration</h1>
+            <nav>
+                <p>다른 계정으로 회원가입</p>
+                <a href="#">구글</a>
+                <a href="#">네이버</a>
+                <a href="#">카카오</a>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2>회원가입 양식</h2>
+                <!--폼 시작-->
+                <form action="#" method="GET">
+                    <div>
+                        <p>이름</p>
+                        <input type="text" name="name" placeholder="name">
+                    </div>
+                    <div>
+                        <p>이메일</p>
+                        <input type="email" name="email" placeholder="e-mail">
+                    </div>
+                    <div>
+                        <p>비밀번호</p>
+                        <input type="password" name="password" placeholder="password">
+                    </div>
+                    <div>
+                        <p>비밀번호 확인</p> 
+                        <input type="password" name="verify" placeholder="verify password">
+                    </div>
+                    <div>
+                        <p>생년월일</p> 
+                        <input type="date" name="birthdate">
+                    <div>
+                        <p>나이</p>
+                        <input type="number" name="age" placeholder="age" min="18" max="100">
+                    </div>
+                    <div>
+                        <p>성별</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">남자</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">여자</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">그 외</label>
+                    </div>
+                    <div>
+                        <p>국가</p>
+                        <select name="nation">
+                            <option value="South Korea">대한민국</option>
+                            <option value="USA">미국</option>
+                            <option value="UK">영국</option>
+                            <option value="Japan">일본</option>
+                            <option value="China">중국</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>관심사</p>
+                        <input type="checkbox" id="reading" name="interest" value="reading">
+                        <label for="reading">독서</label>
+                        <input type="checkbox" id="comics" name="interest" value="comics">
+                        <label for="comics">만화</label>
+                        <input type="checkbox" id="movie" name="interest" value="movie">
+                        <label for="movie">영화</label>
+                        <input type="checkbox" id="animation" name="interest" value="animation">
+                        <label for="animation">애니메이션</label>
+                        <input type="checkbox" id="translating" name="interest" value="translating">
+                        <label for="translating">번역</label>
+                        <input type="checkbox" id="comunity" name="interest" value="comunity">
+                        <label for="comunity">커뮤니티</label>
+                    </div>
+                    <div>
+                        <p>만족도?
+                            <input type="range" name="rating" min="1" max="10">
+                        </p>
+                    </div>
+                    <div>
+                        <button type="submit">회원가입</button>
+                        <button type="reset">초기화</button>
+                        <a href="./login.html">로그인 화면으로 되돌아가기</a>
+                    </div>
+                </form>
+            </section>
+            <article>
+                <h4>회원가입을 하면?</h4>
+                <ul>
+                    <li>책갈피 기능을 사용할 수 있어요</li>
+                    <li>누구나 번역에 참여할 수 있어요</li>
+                    <li>기여도에 따라 보상을 받을 수 있어요</li>
+                </ul>
+            </article>
+            <aside>
+                <h4>광고</h4>
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="200"></video>
+                <br>
+                <svg width="300" height="300">
+                    <rect x="0" y="20" width="200" height="100" stroke="black" stroke-width="1" fill="green"/>
+                </svg>
+            </aside>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy; All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

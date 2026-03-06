@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+body .move {
+    color: #454545;
+}
+
+body .move:hover {
+    color: red;
+}
+
+/* header */
+header {
+    color: #454545;
+}
+
+header h1 {
+    background-color: rgb(64, 92, 64);
+    color: #ccc;
+    padding: 20px 15px;
+    border: 1px solid white;
+}
+
+header nav {
+    background-color: rgb(160, 185, 160);
+    padding: 10px;
+    border: 1px solid white;
+}
+
+
+
+/* 사이드바 만들기 */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    flex: 5;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* main */
+main {
+    background-color: rgb(160, 185, 160);
+    padding: 10px;
+    border: 1px solid white;
+}
+
+main h2{
+    color: #454545;
+    padding: 10px;
+}
+
+
+
+
+/* form */
+#registration-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#registration-form p {
+    padding: 10px;
+}
+
+#registration-form .form-group {
+    margin-top: 5px;
+}
+
+#registration-form > div {
+    border: 1.5px solid darkgray;
+    background-color: rgb(213, 211, 211);
+}
+
+#registration-form input {
+    padding: 2px;
+}
+
+#registration-form input:hover {
+    border: 1px solid black;
+}
+
+#registration-form label {
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+}
+
+    /* 이름 */
+[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+    /* 이메일 */
+[type="email"] {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+    /* 비밀번호 */
+[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+    /* 성별 */
+#registration-form .gender {
+    width: 100px;
+}
+
+#registration-form .gender:hover {
+    border: 1px solid black;
+}
+
+    /* 국가 */
+#registration-form select {
+    border-radius: 3px;
+    width: 100px;
+    height: 24px;
+    text-align: center;
+    outline-style: outset;
+}
+#registration-form select:hover {
+    border: 10px;
+}
+
+    /* 관심사 */
+#registration-form .interest{
+    width: 150px;
+}
+
+#registration-form .interest:hover{
+    border: 1px solid black;
+}
+
+    /* 만족도 */
+.rangeInput{
+            width: 80%;
+            accent-color: green;
+        }
+
+    /* 버튼 */
+#registration-form-button {
+    padding: 10px;
+}
+
+[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 3px;
+}
+[type="reset"] {
+    background-color: green;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 3px;
+}
+[type="submit"]:hover {
+    background-color: #0056b3;
+    color: yellow;
+}
+[type="reset"]:hover {
+    background-color: #b31500;
+    color: yellow;
+}
+
+
+
+
+/* 사이드 바 */
+.sidebar {
+    background-color: rgb(116, 198, 116);
+    color: #202020;
+}
+
+/* article */
+article {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+article h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+article ul {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+strong {
+    font-weight: bold;
+}
+
+strong:hover {
+    color: rgba(129, 7, 7, 0.83)
+}
+
+article li::after {
+    content: "!!"
+}
+
+/* aside */
+aside {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+aside video:hover {
+    border: 1px solid black;
+}
+
+aside svg {
+    border: 1px solid black;
+}
+
+aside svg > rect:first-child:hover {
+    fill: rgb(120, 0, 0);
+}
+
+aside svg > rect:nth-child(2):hover {
+    fill: rgb(120, 120, 0);
+}
+
+aside svg > rect:last-child:hover {
+    fill: rgb(0, 0, 120);
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(160, 185, 160);
+    padding: 10px;
+    border: 1px solid white;
+}
