@@ -2,20 +2,40 @@
   padding: 0;
   margin: 0;
 }
-
+body {
+  max-width: 90vw;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 220);
+}
+main {
+  min-height: calc(100vh - 15vw - 169px);
+  margin-bottom: 5vw;
+  background-color: rgb(14, 14, 60);
+}
 header {
-  margin: 10px 0;
+  text-align: center;
   padding: 20px 10px;
+  margin: 5vw 0px;
   border-bottom: 1px solid #ccc;
+  background-color: rgb(14, 14, 60);
 }
 
 h1 {
   text-align: center;
   padding: 20px;
+  margin-bottom: 20px;
+  color: yellow;
 }
-
+h2 {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0 10px;
+  color: yellow;
+  border-bottom: 1px solid yellow;
+}
 .day {
   text-align: center;
+  color: yellow;
 }
 
 .folder-img {
@@ -23,17 +43,34 @@ h1 {
   height: 100px;
   object-fit: cover;
 }
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
-  margin: 20px 10px;
+}
+.flex-item {
+  padding: 0 100px;
+  margin: 0 100px;
 }
 
 .day06:hover {
   transition: all 1.5s;
   transform: rotate(-180deg);
+  cursor:auto;
+}
+.day07:hover {
+  transition: all 1.5s;
+  transform: scale(0.05);
+  cursor:auto;
+}
+.day08:hover {
+  transition: all 1.5s;
+  transform: rotateY(90deg);
+  cursor:auto;
+}
+.day09:hover {
+  transition: all 1.5s;
+  transform: skewY(100deg);
   cursor:auto;
 }
