@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<heml>
+  <head>
+    <title>Day09</title>
+  </head>
+  <body>
+    <script>
+      // var, let, const 실습
+
+      // 변수 var // 재선언, 재할당 모두 가능하지만 좋지 않음
+      var name = "oz";
+      var name = "oz2";
+      console.log(name);
+
+      // 변수 let
+      let age = 25;
+      // let age = 30; // 재선언 방지
+      age = 30;
+      // age = "20"; // 데이터 타입이 암묵적으로 결정되는 유연한 언어 js > but 그 만큼 위험이 공존함 > 이를 해결하기 위해 등장한 "type script"
+      console.log(age);
+
+      // 상수 const
+      const pi = 3.14;
+      // pi = 3.1; // 재할당 안됨 > but 객체{} 내부 속성은 변경 가능
+      console.log(pi);
+
+      // 번수 선언 실습
+      var greeting = "안녕하세요";
+      let username = "홍길동";
+      const maxAttempts = 3;
+
+      console.log(greeting);
+      username = "김영희";
+      console.log(username);
+      console.log(maxAttempts);
+
+      // 자료형
+
+      // string 문자열
+      let string1 = "작은따옴표('')가 포함됩니다";
+      let string2 = '큰따옴표("")가 포함됩니다';
+      console.log(string1);
+      console.log(string2);
+
+      // string 문자열 연결
+      let stringA = "문자열" + " 연결";
+      let stringB = string1 + " " + string2;
+      console.log("stringA:", stringA);
+      console.log("stringB:", stringB);
+
+      // EX6 문자열 (백틱)
+      let myName = "taem";
+      let oldString = "나의 이름은 " + myName + "입니다.";
+      let es6String = `나의 이름은 ${pi}입니다.`;
+      // 파이썬 format과 비슷. let과 const 모두 가능. 문자열과 숫자 모두 가능. Q. 객체도 가능?
+      console.log(oldString);
+      console.log(es6String);
+
+      // 숫자형
+      // 숫자 - 정수(integer)
+      let num1 = 1;
+      let num2 = 2;
+      console.log("num1 + num2:", num1 + num2);
+
+      // 숫자 - 실수(float)
+      let float1 = 0.1;
+      let float2 = 1.1;
+      console.log("float1 + float2:", float1 + float2);
+      // false: 소수를 이진법으로 변환하는 과정에서 무한소수 발생 > 자름 > 오차 발생 > 값이 다르다고 판단
+      // Q. 언제 무한소수가 발생하지? A. 소수 부분이 5로 나누어떨어지지 않을 때
+      // cf) overflow(표현 가능한 수보다 큰 수)가 발생할 경우 infinity(inf)로 표시 됨
+
+      // 논리형(bulean)
+      let boolean1 = true;
+      let boolean2 = false;
+      let boolean3 = 10 < 20;
+      let boolean4 = 10 > 20;
+      console.log("boolean1:", boolean1);
+      console.log("boolean2:", boolean2);
+      console.log("boolean3:", boolean3);
+      console.log("boolean4:", boolean4);
+
+      // 객체
+      // 배열
+      let studentScore = [80, 70, 90, 60];
+      let emptyScore = [];
+      console.log(studentScore);
+      console.log("studentScore[0]:", studentScore[0]);
+      console.log("studentScore.slice(1, 2):", studentScore.slice(0, 2));
+      console.log("studentScore.length:", studentScore.length);
+      
+      // 객체 리터럴
+      let studentScoreObj = {
+        korean: 80,
+        english: 70,
+        math: 90,
+        science: 60
+      };
+      console.log("studentScoreObj: ", studentScoreObj);
+      console.log("studentScoreObj.english: ", studentScoreObj.english);
+      console.log(studentScoreObj.science);
+
+      console.log("typeof name: ", typeof name);
+      console.log("typeof age: ", typeof age);
+      console.log("typeof studentScore: ", typeof studentScore);
+      console.log("typeof studentScoreObj: ", typeof studentScoreObj);
+    </script>
+  </body>
+</heml>
