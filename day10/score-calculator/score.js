@@ -13,7 +13,10 @@ if (isNaN(score) || score < MINSCORE || score > MAXSCORE) {
 }
 // let isScore = (isNaN(score) || score < MINSCORE || score > MAXSCORE) ? false : true;
 
-if (isScore) {
+if (!isScore) {
+  console.log("Invalid score! Please enter a number between 0 and 100.")
+}
+else {
   // 최종 점수
   let finalScore = score + 5;
   console.log(`Final Score: ${finalScore}`);
@@ -79,7 +82,4 @@ if (isScore) {
       break
   }
   console.log(`Message: ${message}`);
-}
-else {
-  console.log("Invalid score! Please enter a number between 0 and 100.")
 }
