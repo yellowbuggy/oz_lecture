@@ -19,7 +19,6 @@ if (!isScore) {
 else {
   // 최종 점수
   let finalScore = score + 5;
-  console.log(`Final Score: ${finalScore}`);
   
   // 등급
   var grade = null;
@@ -41,7 +40,6 @@ else {
   else {
     grade = "F"; // F: 0 <= score < 55
   }
-  console.log(`Grade: ${grade}`);
   
   // 합불 여부
   var pf = null;
@@ -51,17 +49,10 @@ else {
   else {
     pf = "Pass";
   }
-  console.log(`Status: ${pf}`);
   
   // 등급별 메시지
-  if (score === MAXSCORE) {
-    grade = "Perfect";
-  }
   let message = null;
   switch (grade) {
-    case "Perfect":
-      message = "Perfect Score!"
-      break
     case "S":
       message = "Super!!";
       break
@@ -81,5 +72,13 @@ else {
       message = "Please try harder!";
       break
   }
+  if (score === MAXSCORE) {
+    message = "Perfect Score!";
+  }
+
+  // 콘솔
+  console.log(`Final Score: ${finalScore}`);
+  console.log(`Grade: ${grade}`);
+  console.log(`Status: ${pf}`);
   console.log(`Message: ${message}`);
 }

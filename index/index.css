@@ -64,13 +64,13 @@ h2 {
   transform: scale(0.05);
   cursor:auto;
 }
-.day08:hover {
+/* .day08:hover {
   transition: all 1.5s;
   transform: rotateY(90deg);
   cursor:auto;
-}
-.day09:hover {
+} */
+/* .day09:hover {
   transition: all 1.5s;
   transform: skewY(100deg);
   cursor:auto;
-}
+} */
