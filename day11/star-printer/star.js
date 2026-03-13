@@ -1,6 +1,6 @@
 const STAR = "*";
 
-// 입력 함수 (maxstar, minstar, else-break 추가)
+// 입력 함수
 const getPromptInput = () => {
     const MAXSTAR = 10;
     const MINSTAR = 1;
