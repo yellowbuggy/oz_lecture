@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: white;
+            max-width: 600px;
+            min-height: calc(100vh - 40px);
+            padding: 0 20px;
+            margin: 20px auto;
+            border: 1px solid black;
+            font-family: Arial, sans-serif;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .delete-button {
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        .delete-button:hover {
+            background-color: #cc0000;
+        }
+        .input-text {
+            width: 70%;
+            margin: 0;
+            padding: 10px;
+        }
+        input, button, select {
+            padding: 8px;
+            margin: 5px;
+        }
+        button {
+            cursor: pointer;
+        }
+        #taskCount {
+            text-align: right;
+            padding: 10px;
+            margin-top: 10px; 
+            border-bottom: 1px solid #888;
+        }
+        #taskList {
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div>
+            <select id="priority">
+                <option value="" selected disabled hidden>중요도</option>
+                <option value="low">낮음</option>
+                <option value="high">높음</option>
+            </select>
+            <input type="text" id="taskInput" placeholder="할 일을 입력하세요">
+            <button id="addButton">추가</button>
+            <button id="clearButton">전체 삭제</button>
+        </div>
+        <div id="taskCount">현재 할 일: 0개</div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="dom-assignment.js"></script>
+</body>
+</html>
+
