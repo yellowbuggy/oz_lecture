@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fetch 실습</title>
+  </head>
+  <body>
+    <h1>Fetch API 실습</h1>
+    <input id="search" placeholder="게시물 ID 입력(1-100)">
+    <button onclick="searchPost()">검색</button>
+    <div id="result"></div>
+    <div id="output"></div>
+    <script src="./fetch-api.js">
+      async function searchPost() {
+        try {
+          let id = document.getElementById("search").value;
+          let response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+          if (!response.ok) throw new Error(response.status);
+          let post = await response.json();
+          document.getElementById("output").innerHTML = `<p>${post.title}</p>`;
+        } catch (error) {
+          document.getElementById("output").innerHTML = `<p>에러: ${error.message}</p>`;
+        }
+      }
+
+      // async: 함수 앞에 붙음. 항상 출력값으로 Promise를 반환함(비동기).
+      // await: async 함수 내부에서만 사용 가능한 문. 비동기를 동기화함. async 내부에서 절차대로 진행 가능.
+      // fetch: Promise를 반환함(비동기). url로부터 택배를 받음.
+    </script>
+  </body>
+</html>
+
